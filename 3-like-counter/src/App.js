@@ -19,15 +19,13 @@ class App extends Component {
   };
 
   Reset = () => {
-    this.setState({
-      likes: this.state.likes === 0
-    });
+    this.setState({likes: 0});
   };
 
   render() {
     return (
       <div>
-        <h1>Total Likes: {this.state.likes}</h1>
+        <h1 className={this.state.likes === 0 ? 'likes' : this.state.likes % 2 === 0 ? 'likes even' : 'likes odd'}> Total Likes: {this.state.likes}</h1>
         <button onClick={this.addLike}>Like</button>
         <button onClick={this.disLike}>NotLike</button>
         <button onClick={this.Reset}>Reset</button>
