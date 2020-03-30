@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.footer {
+    height: 10vh;
+    flex-shrink: 0;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: large;
+    font-weight: bolder;
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.header {
+    height: 20vh;
+    background: lightgreen;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;    
+    justify-items: space-between;
+    padding: 1rem;
+    font-size: 50px;
+}
+
+.header p {
+    text-align: right;
+}
